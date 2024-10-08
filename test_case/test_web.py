@@ -10,13 +10,11 @@ from time import sleep
 from common_module.excel_read_web import read_case
 from common_module.web_keyword import Keyword
 
-folder='../data_web/登录'
+folder='/Users/afayeno1/Documents/excelPytest/data_web/登录'
 
 @pytest.fixture()
 def abc():
     global case, element, keyword, driver, folder,case
-    # case_file='../data_web/登录/登录百度.xlsx'
-    # case=read_case(case_file)
     case=read_case(folder)
     keyword=Keyword()
 

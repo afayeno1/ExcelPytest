@@ -15,7 +15,7 @@ def pytest_addoption(parser):
         "--module",
         action="append",
         default=None,
-        choices=['登录1','登录2'],
+        choices=['登录1','登录2','登录3'],
         help="按模块执行"
     )
     parser.addoption(

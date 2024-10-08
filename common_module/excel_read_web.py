@@ -49,7 +49,7 @@ def read_file(file):
     return dict_data
 
 def element():
-    wb = load_workbook("../data_web/element.xlsx")
+    wb = load_workbook("/Users/afayeno1/Documents/excelPytest/data_web/element.xlsx")
     element={}
     for sheet in wb.sheetnames:
         element[sheet] = {}
